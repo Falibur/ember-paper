@@ -1,33 +1,110 @@
 {
-  "name": "ember-paper",
-  "description": "The Ember approach to Material Design.",
-  "version": "1.0.0-alpha.19",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
+  "_args": [
+    [
+      {
+        "raw": "github:remerge/ember-paper#consistent-theme-colors",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "github:remerge/ember-paper#consistent-theme-colors",
+        "spec": "github:remerge/ember-paper#consistent-theme-colors",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:remerge/ember-paper.git#consistent-theme-colors",
+          "sshUrl": "git+ssh://git@github.com/remerge/ember-paper.git#consistent-theme-colors",
+          "httpsUrl": "git+https://github.com/remerge/ember-paper.git#consistent-theme-colors",
+          "gitUrl": "git://github.com/remerge/ember-paper.git#consistent-theme-colors",
+          "shortcut": "github:remerge/ember-paper#consistent-theme-colors",
+          "directUrl": "https://raw.githubusercontent.com/remerge/ember-paper/consistent-theme-colors/package.json"
+        }
+      },
+      "/vagrant/omt/new-app"
+    ]
+  ],
+  "_from": "remerge/ember-paper#consistent-theme-colors",
+  "_id": "ember-paper@1.0.0-alpha.19",
+  "_inCache": true,
+  "_location": "/ember-paper",
+  "_phantomChildren": {
+    "amdefine": "1.0.1",
+    "autoprefixer-core": "5.2.1",
+    "broccoli-writer": "0.1.1",
+    "ember-basic-dropdown": "0.20.0",
+    "ember-cli-babel": "5.2.4",
+    "ember-cli-htmlbars": "1.3.2",
+    "ember-concurrency": "0.7.17",
+    "ember-text-measurer": "0.3.3",
+    "glob": "5.0.15",
+    "js-base64": "2.1.9",
+    "minimist": "0.0.8",
+    "promise-map-series": "0.2.3",
+    "quick-temp": "0.1.8",
+    "rsvp": "3.5.0",
+    "symlink-or-copy": "1.1.8"
   },
-  "scripts": {
-    "build": "ember build",
-    "start": "ember server",
-    "test": "ember try:each"
+  "_requested": {
+    "raw": "github:remerge/ember-paper#consistent-theme-colors",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "github:remerge/ember-paper#consistent-theme-colors",
+    "spec": "github:remerge/ember-paper#consistent-theme-colors",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:remerge/ember-paper.git#consistent-theme-colors",
+      "sshUrl": "git+ssh://git@github.com/remerge/ember-paper.git#consistent-theme-colors",
+      "httpsUrl": "git+https://github.com/remerge/ember-paper.git#consistent-theme-colors",
+      "gitUrl": "git://github.com/remerge/ember-paper.git#consistent-theme-colors",
+      "shortcut": "github:remerge/ember-paper#consistent-theme-colors",
+      "directUrl": "https://raw.githubusercontent.com/remerge/ember-paper/consistent-theme-colors/package.json"
+    }
   },
-  "repository": "https://github.com/miguelcobain/ember-paper",
-  "engines": {
-    "node": ">= 0.12.0"
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git://github.com/remerge/ember-paper.git#62c562f0226a694a4ed3b1c7e871f95ae10763bf",
+  "_shasum": "a26776b59f53a0fcbb0228a2d5ed16c3706b68d1",
+  "_shrinkwrap": null,
+  "_spec": "github:remerge/ember-paper#consistent-theme-colors",
+  "_where": "/vagrant/omt/new-app",
+  "author": {
+    "name": "Miguel Andrade",
+    "email": "jmandrade0@gmail.com"
   },
-  "author": "Miguel Andrade <jmandrade0@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/miguelcobain/ember-paper/issues"
   },
+  "dependencies": {
+    "angular-material-source": "github:angular/material#v1.0.9",
+    "broccoli-autoprefixer": "^3.0.0",
+    "broccoli-filter": "^1.2.3",
+    "broccoli-funnel": "^1.0.1",
+    "broccoli-merge-trees": "^1.1.0",
+    "ember-basic-dropdown": "0.20.0",
+    "ember-cli-babel": "^5.1.7",
+    "ember-cli-htmlbars": "^1.1.1",
+    "ember-composability-tools": "0.0.8",
+    "ember-css-transitions": "0.1.9",
+    "ember-power-select": "1.2.0",
+    "ember-wormhole": "0.5.1",
+    "hammerjs": "^2.0.8",
+    "matchmedia-polyfill": "^0.3.0",
+    "propagating-hammerjs": "^1.4.6",
+    "resolve": "^1.1.7",
+    "virtual-each": "0.3.1"
+  },
+  "description": "The Ember approach to Material Design.",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^2.4.1",
     "ember-cli": "2.11.0",
-    "ember-cli-app-version": "^3.0.0",
-    "ember-cli-dependency-checker": "^1.4.0",
-    "ember-cli-eslint": "^3.0.3",
-    "ember-cli-fastboot": "1.0.0-beta.16",
+    "ember-cli-app-version": "^2.0.0",
+    "ember-cli-dependency-checker": "^1.3.0",
+    "ember-cli-eslint": "3.0.2",
+    "ember-cli-fastboot": "1.0.0-beta.9",
     "ember-cli-github-pages": "^0.1.2",
     "ember-cli-htmlbars-inline-precompile": "^0.3.3",
     "ember-cli-inject-live-reload": "^1.4.1",
@@ -36,50 +113,28 @@
     "ember-cli-sass": "^6.0.0",
     "ember-cli-shims": "^1.0.2",
     "ember-cli-sri": "^2.1.0",
-    "ember-cli-test-loader": "^2.1.0",
+    "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-code-snippet": "1.8.1",
-    "ember-cp-validations": "3.3.0",
+    "ember-code-snippet": "1.3.0",
+    "ember-cp-validations": "3.0.1",
     "ember-data": "^2.11.0",
     "ember-deferred-content": "0.2.0",
     "ember-disable-prototype-extensions": "^1.1.0",
-    "ember-export-application-global": "^2.0.0",
-    "ember-inflector": "1.11.0",
+    "ember-export-application-global": "^1.0.5",
+    "ember-inflector": "1.9.4",
     "ember-load-initializers": "^0.6.0",
     "ember-resolver": "^2.0.3",
     "ember-source": "^2.11.0",
     "ember-transition-helper": "0.0.6",
     "eslint-plugin-ember-suave": "^1.0.0",
-    "liquid-fire": "0.27.2",
+    "liquid-fire": "0.27.0",
     "loader.js": "^4.0.10",
     "qunitjs": "2.2.1"
   },
-  "dependencies": {
-    "angular-material-source": "github:angular/material#v1.1.0",
-    "broccoli-autoprefixer": "^4.1.0",
-    "broccoli-filter": "^1.2.3",
-    "broccoli-funnel": "^1.0.1",
-    "broccoli-merge-trees": "^2.0.0",
-    "ember-basic-dropdown": "0.20.0",
-    "ember-cli-babel": "^5.1.7",
-    "ember-cli-htmlbars": "^1.1.1",
-    "ember-composability-tools": "0.0.8",
-    "ember-css-transitions": "0.1.10",
-    "ember-power-select": "1.2.0",
-    "ember-wormhole": "0.5.1",
-    "hammerjs": "^2.0.8",
-    "matchmedia-polyfill": "^0.3.0",
-    "propagating-hammerjs": "^1.4.6",
-    "resolve": "^1.1.7",
-    "virtual-each": "0.5.0"
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
   },
-  "keywords": [
-    "ember-addon",
-    "material",
-    "design",
-    "ember",
-    "paper"
-  ],
   "ember-addon": {
     "configPath": "tests/dummy/config",
     "demoURL": "https://miguelcobain.github.io/ember-paper",
@@ -87,5 +142,32 @@
     "versionCompatibility": {
       "ember": ">=2.3.0"
     }
-  }
+  },
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "gitHead": "62c562f0226a694a4ed3b1c7e871f95ae10763bf",
+  "homepage": "https://github.com/miguelcobain/ember-paper#readme",
+  "keywords": [
+    "ember-addon",
+    "material",
+    "design",
+    "ember",
+    "paper"
+  ],
+  "license": "MIT",
+  "name": "ember-paper",
+  "optionalDependencies": {},
+  "readme": "# Ember Paper [![Build Status](https://travis-ci.org/miguelcobain/ember-paper.svg)](https://travis-ci.org/miguelcobain/ember-paper) [![Ember Observer Score](http://emberobserver.com/badges/ember-paper.svg)](http://emberobserver.com/addons/ember-paper) [![Slack Status](https://ember-community-slackin.herokuapp.com/badge.svg)](https://ember-community-slackin.herokuapp.com/)\n\nThis project aims to bring Google's new [Material Design](https://www.google.com/design/spec/material-design/introduction.html) to Ember. The goal is to encapsulate everything possible in Ember components. This project is packaged as an [Ember-cli](http://www.ember-cli.com/) addon.\n\n## Installation\n\nInstall the ember-cli addon in your ember-cli project:\n\n```\n$ ember install ember-paper\n```\n\nThis should also automatically create an scss file under `app/styles/app.scss` with `@import 'ember-paper';` and install `ember-cli-sass`.\n\nSass is an important part of Ember-paper. Using sass you can override default variables and easily change the default behavior of Ember-paper.\n\nAll the components and styles are ready to use in your application templates.\nNavigate through the docs to understand how to use each component.\n\n**Note** If upgrading from a previous version of ember-paper and you are seeing compile errors around `app.scss|sass` not existing, please make sure to remove `broccoli-sass` from your `package.json`, remove your `node_modules` and reinstall.\n\n### Content Security Policy\n\nEmber Paper uses fonts from Google Fonts, so the URL to them has to be white listed.  You can set this by adding to the Content Security Policy defined in `config/environment.js` like so:\n\n```js\nENV.contentSecurityPolicy = {\n  'default-src': \"'none'\",\n  'script-src': \"'self' 'unsafe-inline'\",\n  'style-src': \"'self' 'unsafe-inline' https://fonts.googleapis.com\",\n  'font-src': \"'self' fonts.gstatic.com\",\n  'connect-src': \"'self'\",\n  'img-src': \"'self' data:\",\n  'media-src': \"'self'\"\n}\n```\n\nWe also need to allow `data:` in `img-src` because of a [current hack](https://github.com/miguelcobain/ember-paper/blob/master/app%2Fstyles%2Fpaper-button.scss) in paper-button.\n\nYou can find out more information on the CSP addon page [here](https://github.com/rwjblue/ember-cli-content-security-policy#ember-cli-content-security-policy).\n\n## Version Roadmap\n\n**0.2** The initial implementation of `ember-paper` culminated in version 0.2 (at the time of this writing, 0.2.12). This version receives security and critical bug fixes only.\n\nVersion 0.2 is a good choice if you need to use `ember-paper` now in your application, and you have tested the components you use and confirmed that they work to your satisfaction. If you encounter bugs, you'll likely need to fix them yourself, as the `ember-paper` team is focused on completing version 1.0. When version 1.0 is released, you will need to adapt to the the API changes as part of your update.\n\n**1.0** All new development work is focused on the master branch, which will be released as version 1.0.0. This version uses the Angular Material style sheets, which are imported and processed automatically during the build process. This allows `ember-paper` to have excellent fidelity with regard to the Angular version.\n\nThe master branch contains significant API changes relative to version 0.2 and earlier. Modern Ember coding style and naming conventions are used. These changes are detailed in the [change log](CHANGELOG.md).\n\nThe master branch is a good choice if your project's timetable jibes with the components which have been migrated from 0.2 or which are expected to be before your project's completion. The master branch has more features, and the components which have been completed are more robust, better-designed, and in accordance with today's Ember best practices, such as \"Data Down, Actions Up\". Please note that 1.0 is only compatible with Ember 2.3.x and above.\n\nIf you encounter difficulties with the master branch, the work you do to diagnose and fix bugs will accelerate the availability version 1.0. In addition, the team is motivated to help you help the project with your improvements.\n\nIf you need a component for your project which has not yet been migrated to version 1.0 standards, the team welcomes your contribution.\n\n## Resources\n\n- The team can often be found on the [#e-paper channel on slack](https://embercommunity.slack.com/messages/e-paper/). Features and designs are discussed there prior to implementation. Get your invite to Ember Community Slack [here](https://ember-community-slackin.herokuapp.com/).\n\n- The [GitHub milestone issue](https://github.com/miguelcobain/ember-paper/issues/249) tracks our progress to version 1.0.\n\n- The team coordinates who is working on what component(s) with a [shared canvas document](https://usecanvas.com/emberpaper/backlog/5lluHTIZAI8G2797TdEcsD).\n\n- The [Angular Material demo site](https://material.angularjs.org/1.0.9/) provides examples of what we are trying to accomplish. Use version 1.0.9.\n\n- Building the `ember-paper` demo application will give you your own up-to-date reference. This can be accomplished by installing ember-paper as if it were an application and running `ember server`.\n\n- **Ready to help?** Read our [Contributing Guide](CONTRIBUTING.md).\n\n## Contributing\n\nThis is a very ambitious project. Google's design specs are extensive, and non-trivial to implement. If you can port or fix a component or two, please drop a pull request or issue on GitHub or join us on slack.\n\nWith everyone's help, we can bring this amazing design spec to Ember in a modular and elegant way. The Ember way.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelcobain/ember-paper.git"
+  },
+  "scripts": {
+    "build": "ember build",
+    "start": "ember server",
+    "test": "ember try:each"
+  },
+  "version": "1.0.0-alpha.19"
 }

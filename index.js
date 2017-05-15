@@ -48,16 +48,10 @@ module.exports = {
           '<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">';
       }
     } else if (type === 'body-footer') {
-      var response = null;
       var emberPowerSelect = this.addons.filter(function(addon) {
         return addon.name === 'ember-power-select';
       })[0];
-      response = emberPowerSelect.contentFor(type, config);
-      if (config.environment !== 'test' &&  !config._emberPaperContentForInvoked) {
-        config._emberPaperContentForInvoked = true;
-        response = response ? `${response}<div id="paper-wormhole"></div>`: '<div id="paper-wormhole"></div>';
-      }
-      return response;
+      return emberPowerSelect.contentFor(type, config);
     }
   },
 
@@ -91,12 +85,11 @@ module.exports = {
     var scssFiles = [
       //core styles
       'core/style/typography.scss',
+      'core/style/themes.scss',
       'core/style/mixins.scss',
       'core/style/variables.scss',
       'core/style/structure.scss',
-      'core/style/layout.scss',
       'core/services/layout/layout.scss',
-
       //component styles
       'components/content/content.scss',
       'components/content/content-theme.scss',

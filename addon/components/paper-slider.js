@@ -22,7 +22,7 @@ export default Component.extend(FocusableMixin, ColorMixin, {
   attributeBindings: ['min', 'max', 'step', 'discrete:md-discrete', 'tabindex'],
 
   classNames: ['md-default-theme'],
-  classNameBindings: ['isMinimum:md-min', 'active:md-active', 'dragging:md-dragging'],
+  classNameBindings: ['isMinimum:md-min', 'active', 'dragging:md-dragging'],
 
   constants: inject.service(),
 
@@ -46,8 +46,8 @@ export default Component.extend(FocusableMixin, ColorMixin, {
   }),
 
   percent: computed('value', 'min', 'max', function() {
-    let min = parseFloat(this.get('min'), 10);
-    let max = parseFloat(this.get('max'), 10);
+    let min = parseInt(this.get('min'), 10);
+    let max = parseInt(this.get('max'), 10);
 
     return clamp((this.get('value') - min) / (max - min), 0, 1);
   }),
@@ -105,19 +105,19 @@ export default Component.extend(FocusableMixin, ColorMixin, {
   },
 
   percentToValue(x) {
-    let min = parseFloat(this.get('min'), 10);
-    let max = parseFloat(this.get('max'), 10);
+    let min = parseInt(this.get('min'), 10);
+    let max = parseInt(this.get('max'), 10);
     return (min + x * (max - min));
   },
 
   minMaxValidator(value) {
-    let min = parseFloat(this.get('min'), 10);
-    let max = parseFloat(this.get('max'), 10);
+    let min = parseInt(this.get('min'), 10);
+    let max = parseInt(this.get('max'), 10);
     return Math.max(min, Math.min(max, value));
   },
 
   stepValidator(value) {
-    let step = parseFloat(this.get('step'), 10);
+    let step = parseInt(this.get('step'), 10);
     return Math.round(value / step) * step;
   },
 
@@ -183,9 +183,9 @@ export default Component.extend(FocusableMixin, ColorMixin, {
     let changeAmount, newValue;
 
     if (event.keyCode === this.get('constants.KEYCODE.LEFT_ARROW')) {
-      changeAmount = parseFloat(this.get('step')) * -1;
+      changeAmount = parseInt(this.get('step')) * -1;
     } else if (event.keyCode === this.get('constants.KEYCODE.RIGHT_ARROW')) {
-      changeAmount = parseFloat(this.get('step'));
+      changeAmount = parseInt(this.get('step'));
     }
 
     if (changeAmount) {

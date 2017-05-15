@@ -25,8 +25,8 @@ export default Component.extend(FocusableMixin, ColorMixin, ChildMixin, Validati
   classNameBindings: [
     'hasValue:md-input-has-value',
     'isInvalidAndTouched:md-input-invalid',
-    'hasLeftIcon:md-icon-left',
-    'hasRightIcon:md-icon-right',
+    'eitherIcon:md-has-icon',
+    'iconRight:md-icon-right',
     'focused:md-input-focused',
     'block:md-block'
   ],
@@ -56,8 +56,7 @@ export default Component.extend(FocusableMixin, ColorMixin, ChildMixin, Validati
     return `${currentLength}/${this.get('maxlength')}`;
   }),
 
-  hasLeftIcon: computed.bool('icon'),
-  hasRightIcon: computed.bool('iconRight'),
+  eitherIcon: computed.or('icon', 'iconRight'),
   isInvalidAndTouched: computed.and('isInvalid', 'isTouched'),
 
   validationProperty: 'value', // property that validations should be run on

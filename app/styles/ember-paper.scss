@@ -63,11 +63,11 @@
 @import 'color-palette';
 @import 'default-theme';
 @import './angular-material/core/style/mixins';
+@import './angular-material/core/style/themes';
 @import './angular-material/core/style/variables';
 @import './angular-material/core/style/structure';
 @import './angular-material/core/style/typography';
-@import './angular-material/core/style/layout';
-@import './angular-material/core/services/layout/layout';
+@import './angular-material/core/services/layout/layout.scss';
 
 // Component styles
 @import './angular-material/components/content/content';
@@ -144,6 +144,7 @@
 @import './angular-material/components/chips/chips-theme';
 
 // Backports of features from future versions of angular-material-source to this version
+@import './backports/paper-input';
 @import './backports/paper-select';
 @import './backports/ripple';
 @import './backports/paper-autocomplete';
